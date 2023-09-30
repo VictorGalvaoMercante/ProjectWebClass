@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    
+}
+
+#containerTopo{
+    
+    background-color: rgba(0, 0, 0, 0.718);
+    
+    top: 50%;
+    left: 50%;
+    margin-top: -400px;
+    margin-left: -200px;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    box-shadow: 4px 4px 20px black;
+    border-radius: 20px;
+}
+h3{
+    font-style: italic;
+    color: rgb(255, 255, 255);
+   
+   
+}
+
+h1{
+    font-family: 'Pixelify Sans', cursive;
+    margin-top: 20px;
+    margin-left: 45px;
+    margin-bottom: 40px;
+    color: white;
+    width: 320px;
+    height: 40px;
+    overflow: hidden;
+ 
+}
+label{
+    font-size: 18pt;
+    color: white;
+    font-family: 'Pixelify Sans', cursive;
+   
+    
+}
+input{
+    width: 250px;
+    height: 25px;
+    margin-bottom: 25px;
+    font-size: 12pt;
+    
+}
+
+.animacaoDigito{
+    border-right: 2px solid rgb(255, 255, 255 , 0.75);
+    
+
+}
+.typing-animation{
+    
+    animation:blinkCursor 500ms infinite normal;
+}
+
+@keyframes blinkCursor{
+    from{
+        border-right-color:rgba(255,255,255,0.75)
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+/** Botao **/
+
+.button {
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 12pt;
+    width: 150px;
+    height: 30px;
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-top: 2px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color:rgb(255, 0, 0);
+      border-radius: 10rem;
+      z-index: -2;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: rgb(255, 255, 255);
+      transition: all .3s;
+      border-radius: 10rem;
+      z-index: -1;
+      
+     
+    }
+    &:hover {
+      color: #000000;
+      &:before {
+        width: 100%;
+       
+      }
+    }
+}
+
+/**Caixa Resultado**/
+
+
+#containerResultado{
+    background-color: rgba(0, 0, 0, 0.718);
+    font-size: 28pt;
+    color: white;
+    top: 50%;
+    left: 50%;
+    margin-top: 10px;
+    margin-left: -200px;
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    box-shadow: 4px 4px 20px black;
+    border-radius: 20px;
+}
+
