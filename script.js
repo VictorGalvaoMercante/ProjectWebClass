@@ -2,12 +2,7 @@ function validarSenha() {
     let senha = document.getElementById('senha').value;
     let confirmacao = document.getElementById('confirmacao').value;
     let msg = document.getElementById('msg')
-
-
-    
-
-    
-    
+  
     
     if(senha == 'victor_34026355' && confirmacao == 'eric_35138921' || senha == "eric_35138921" && confirmacao == "victor_34026355"){
         msg.innerHTML = "Nome dos criadores.OK!"
